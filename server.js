@@ -1,8 +1,10 @@
 import express from 'express';
 import swaggerUi from 'swagger-ui-express';
 import swaggerJsdoc from 'swagger-jsdoc';
+import cors from 'cors'
 
 const app = express();
+app.use(cors())
 app.use(express.json());
 
 let students = [];
